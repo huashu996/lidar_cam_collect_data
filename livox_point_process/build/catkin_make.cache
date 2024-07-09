@@ -1,0 +1,2 @@
+plane_fit_ground_filter/plane_ground_filter:point_cluster
+-DCATKIN_DEVEL_PREFIX=/home/b/cxl/livox_point_process/devel -DCMAKE_INSTALL_PREFIX=/home/b/cxl/livox_point_process/install -G Unix Makefiles

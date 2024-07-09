@@ -1,0 +1,8 @@
+prefix=/home/b/cxl/livox_point_process/devel
+
+Name: plane_ground_filter
+Description: Description of plane_ground_filter
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs pcl_ros

@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="plane_ground_filter" type="plane_ground_filter_node" name="plane_ground_filter_node" output="screen"/>
+</launch>
