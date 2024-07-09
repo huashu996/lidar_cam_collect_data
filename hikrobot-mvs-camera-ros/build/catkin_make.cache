@@ -1,0 +1,2 @@
+HIKROBOT-MVS-CAMERA-ROS-master
+-DCATKIN_DEVEL_PREFIX=/home/b/cxl/hikrobot-mvs-camera-ros/devel -DCMAKE_INSTALL_PREFIX=/home/b/cxl/hikrobot-mvs-camera-ros/install -G Unix Makefiles

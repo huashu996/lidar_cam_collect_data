@@ -1,0 +1,16 @@
+\subsubsection usage Usage
+\verbatim
+<node name="hikrobot_camera" pkg="hikrobot_camera" type="hikrobot_camera">
+  <param name="FrameRate" type="int" value="60" />
+  <param name="ExposureTime" type="int" value="2000" />
+  <param name="GammaEnable" type="bool" value="True" />
+  <param name="Gamma" type="double" value="0.7" />
+  <param name="GainAuto" type="double" value="2.0" />
+  <param name="Saturation" type="int" value="128" />
+  <param name="CalibrateEnable" type="bool" value="False" />
+  <param name="Brightness" type="int" value="50" />
+  <param name="ExposureAuto" type="int" value="0" />
+  <param name="BalanceWhiteAuto" type="int" value="2" />
+</node>
+\endverbatim
+

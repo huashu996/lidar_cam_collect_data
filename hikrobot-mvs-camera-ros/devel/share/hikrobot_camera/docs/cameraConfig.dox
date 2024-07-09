@@ -1,0 +1,15 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~FrameRate" : \b [int] Frame rate min: 10, default: 60, max: 60
+- \b "~ExposureTime" : \b [int] Exposure time min: 0, default: 2000, max: 1000000
+- \b "~GammaEnable" : \b [bool] Enable Gamma min: False, default: True, max: True
+- \b "~Gamma" : \b [double] Gamma min: -2.0, default: 0.7, max: 2.0
+- \b "~GainAuto" : \b [double] Auto gain min: 0.0, default: 2.0, max: 2.0
+- \b "~Saturation" : \b [int] Saturation min: 0, default: 128, max: 255
+- \b "~CalibrateEnable" : \b [bool] Enable calibrate min: False, default: False, max: True
+- \b "~Brightness" : \b [int] Brightness min: 0, default: 50, max: 255
+- \b "~ExposureAuto" : \b [int] Auto exposure time min: 0, default: 0, max: 2
+- \b "~BalanceWhiteAuto" : \b [int] Auto exposure time min: 0, default: 2, max: 2
+

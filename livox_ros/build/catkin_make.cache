@@ -1,0 +1,2 @@
+livox_ros_driver_for_R2LIVE-main/livox_ros_driver
+-DCATKIN_DEVEL_PREFIX=/home/b/cxl/livox_ros/devel -DCMAKE_INSTALL_PREFIX=/home/b/cxl/livox_ros/install -G Unix Makefiles

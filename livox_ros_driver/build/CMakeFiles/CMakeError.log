@@ -1,0 +1,56 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/b/cxl/livox_ros_driver/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_af677/fast"
+/usr/bin/make -f CMakeFiles/cmTC_af677.dir/build.make CMakeFiles/cmTC_af677.dir/build
+make[1]: Entering directory '/home/b/cxl/livox_ros_driver/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af677.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_af677.dir/CheckSymbolExists.c.o   -c /home/b/cxl/livox_ros_driver/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_af677
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af677.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_af677.dir/CheckSymbolExists.c.o  -o cmTC_af677 
+CMakeFiles/cmTC_af677.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_af677.dir/build.make:97: recipe for target 'cmTC_af677' failed
+make[1]: *** [cmTC_af677] Error 1
+make[1]: Leaving directory '/home/b/cxl/livox_ros_driver/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_af677/fast' failed
+make: *** [cmTC_af677/fast] Error 2
+
+File /home/b/cxl/livox_ros_driver/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/b/cxl/livox_ros_driver/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_056e1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_056e1.dir/build.make CMakeFiles/cmTC_056e1.dir/build
+make[1]: Entering directory '/home/b/cxl/livox_ros_driver/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_056e1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_056e1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_056e1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_056e1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_056e1.dir/CheckFunctionExists.c.o  -o cmTC_056e1 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_056e1.dir/build.make:97: recipe for target 'cmTC_056e1' failed
+make[1]: *** [cmTC_056e1] Error 1
+make[1]: Leaving directory '/home/b/cxl/livox_ros_driver/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_056e1/fast' failed
+make: *** [cmTC_056e1/fast] Error 2
+
+

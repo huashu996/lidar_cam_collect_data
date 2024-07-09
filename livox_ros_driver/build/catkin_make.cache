@@ -1,0 +1,2 @@
+livox_ros_driver/livox_ros_driver:point_cluster:points_ground_filter
+-DCATKIN_DEVEL_PREFIX=/home/b/cxl/livox_ros_driver/devel -DCMAKE_INSTALL_PREFIX=/home/b/cxl/livox_ros_driver/install -G Unix Makefiles

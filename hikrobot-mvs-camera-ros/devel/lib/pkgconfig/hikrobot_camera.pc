@@ -1,0 +1,8 @@
+prefix=/home/b/cxl/hikrobot-mvs-camera-ros/devel
+
+Name: hikrobot_camera
+Description: Description of hikrobot_camera
+Version: 0.0.0
+Cflags: -I/home/b/cxl/hikrobot-mvs-camera-ros/devel/include
+Libs: -L${prefix}/lib 
+Requires: 
